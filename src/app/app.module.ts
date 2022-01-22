@@ -28,6 +28,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { CategoriaDeleteComponent } from './components/views/categoria/categoria-delete/categoria-delete.component';
 import { CategoriaUpdateComponent } from './components/views/categoria/categoria-update/categoria-update.component';
 import { JogoReadAllComponent } from './components/views/jogo/jogo-read-all/jogo-read-all.component';
+import { JogoCreateComponent } from './components/views/jogo/jogo-create/jogo-create.component';
+import { JogoUpdateComponent } from './components/views/jogo/jogo-update/jogo-update.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { JogoReadAllComponent } from './components/views/jogo/jogo-read-all/jogo
     CategoriaCreateComponent,
     CategoriaDeleteComponent,
     CategoriaUpdateComponent,
-    JogoReadAllComponent
+    JogoReadAllComponent,
+    JogoCreateComponent,
+    JogoUpdateComponent
   ],
   imports: [
     BrowserModule,

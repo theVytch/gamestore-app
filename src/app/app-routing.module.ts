@@ -1,3 +1,5 @@
+import { JogoUpdateComponent } from './components/views/jogo/jogo-update/jogo-update.component';
+import { JogoCreateComponent } from './components/views/jogo/jogo-create/jogo-create.component';
 import { JogoReadAllComponent } from './components/views/jogo/jogo-read-all/jogo-read-all.component';
 import { CategoriaUpdateComponent } from './components/views/categoria/categoria-update/categoria-update.component';
 import { CategoriaDeleteComponent } from './components/views/categoria/categoria-delete/categoria-delete.component';
@@ -31,6 +33,14 @@ const routes: Routes = [
   {
     path: 'categorias/:id_cat/jogos',
     component: JogoReadAllComponent
+  },
+  {
+    path: 'categorias/:id_cat/jogos/create',
+    component: JogoCreateComponent
+  },
+  {
+    path: 'categorias/:id_cat/jogos/:id/update',
+    component: JogoUpdateComponent
   }
 
 ];

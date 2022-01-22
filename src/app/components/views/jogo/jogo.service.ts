@@ -20,13 +20,13 @@ export class JogoService {
   }
 
   findById(id: String): Observable<Jogo>{
-    const url = `${this.baseUrl}/categorias/${id}`
+    const url = `${this.baseUrl}/jogos/${id}`
     return this.http.get<Jogo>(url)
   }
 
-  create(categoria: Jogo): Observable<Jogo>{
-    const url = `${this.baseUrl}/categorias`
-    return this.http.post<Jogo>(url, categoria)
+  create(jogo: Jogo, id_cat: String): Observable<Jogo>{
+    const url = `${this.baseUrl}/jogos?categoria=${id_cat}`
+    return this.http.post<Jogo>(url, jogo)
   }
 
   delete(id: String):Observable<void>{
@@ -34,9 +34,9 @@ export class JogoService {
     return this.http.delete<void>(url) 
   }
 
-  update(categoria: Jogo):Observable<void> {
-    const url = `${this.baseUrl}/categorias/${categoria.id}`
-    return this.http.put<void>(url, categoria) 
+  update(jogo: Jogo):Observable<void> {
+    const url = `${this.baseUrl}/jogos/${jogo.id}}`
+    return this.http.put<void>(url, jogo) 
   }
 
   mensagem(str: String): void{
