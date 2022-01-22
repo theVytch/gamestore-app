@@ -30,13 +30,13 @@ export class JogoService {
   }
 
   delete(id: String):Observable<void>{
-    const url = `${this.baseUrl}/categorias/${id}`
+    const url = `${this.baseUrl}/jogos/${id}`
     return this.http.delete<void>(url) 
   }
 
-  update(jogo: Jogo):Observable<void> {
-    const url = `${this.baseUrl}/jogos/${jogo.id}}`
-    return this.http.put<void>(url, jogo) 
+  update(jogo: Jogo):Observable<Jogo> {
+    const url = `${this.baseUrl}/jogos/${jogo.id}`
+    return this.http.put<Jogo>(url, jogo) 
   }
 
   mensagem(str: String): void{

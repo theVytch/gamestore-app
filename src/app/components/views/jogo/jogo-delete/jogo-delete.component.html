@@ -1,0 +1,25 @@
+<form>
+    <h1>Deletar jogo</h1>
+
+    <mat-form-field class="form">
+        <mat-label>Titulo</mat-label>
+        <input matInput [(ngModel)]="jogo.titulo" type="text" name="titulo" disabled>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Nome Empresa</mat-label>
+        <input matInput [(ngModel)]="jogo.nome_empresa" type="text" name="nome_empresa" disabled>
+    </mat-form-field>
+    
+    <mat-form-field class="form">
+        <mat-label>Descricao</mat-label>
+        <input matInput [(ngModel)]="jogo.descricao" type="text" name="descricao" disabled>
+    </mat-form-field>
+    
+    
+    <div class="buttons">
+        <button (click)="delete()" class="mat-elevation-z8"  mat-stroked-button="primary">Deletar</button>
+        <button (click)="cancel()" class="mat-elevation-z8"  mat-stroked-button="warn">Cancelar</button>
+    </div>
+</form>
+

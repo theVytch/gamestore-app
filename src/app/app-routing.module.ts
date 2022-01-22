@@ -8,6 +8,8 @@ import { CategoriaReadComponent } from './components/views/categoria/categoria-r
 import { HomeComponent } from './components/views/home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { JogoDeleteComponent } from './components/views/jogo/jogo-delete/jogo-delete.component';
+import { JogoReadComponent } from './components/views/jogo/jogo-read/jogo-read.component';
 
 const routes: Routes = [
   {
@@ -41,6 +43,14 @@ const routes: Routes = [
   {
     path: 'categorias/:id_cat/jogos/:id/update',
     component: JogoUpdateComponent
+  },
+  {
+    path: 'categorias/:id_cat/jogos/:id/delete',
+    component: JogoDeleteComponent
+  },
+  {
+    path: 'categorias/:id_cat/jogos/:id/read',
+    component: JogoReadComponent
   }
 
 ];

@@ -30,6 +30,8 @@ import { CategoriaUpdateComponent } from './components/views/categoria/categoria
 import { JogoReadAllComponent } from './components/views/jogo/jogo-read-all/jogo-read-all.component';
 import { JogoCreateComponent } from './components/views/jogo/jogo-create/jogo-create.component';
 import { JogoUpdateComponent } from './components/views/jogo/jogo-update/jogo-update.component';
+import { JogoDeleteComponent } from './components/views/jogo/jogo-delete/jogo-delete.component';
+import { JogoReadComponent } from './components/views/jogo/jogo-read/jogo-read.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { JogoUpdateComponent } from './components/views/jogo/jogo-update/jogo-up
     CategoriaUpdateComponent,
     JogoReadAllComponent,
     JogoCreateComponent,
-    JogoUpdateComponent
+    JogoUpdateComponent,
+    JogoDeleteComponent,
+    JogoReadComponent
   ],
   imports: [
     BrowserModule,
